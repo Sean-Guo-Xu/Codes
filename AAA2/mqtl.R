@@ -1,0 +1,10 @@
+library("coloc")
+library(TwoSampleMR)
+library(clusterProfiler)
+library(org.Hs.eg.db)
+library(locuscomparer)
+library(ggplot2)
+setwd("D:\\AAA\\eqtl\\smr")
+commond = paste("smr-1.3.1-win.exe --beqtl-summary ./mqtl/sQTL_Artery_Aorta.query.chr1 "," --query 0.0001 --out eqtl_print")
+system(commond,intern = T)
+
